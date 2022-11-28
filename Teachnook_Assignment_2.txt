@@ -1,0 +1,31 @@
+Assignment 2
+
+mylist=[436,325,812,704,29,130,841]
+​
+# To print the largest and smallest number in a list. 
+print("The smallest number in the list is:",min(mylist))
+print("The largest number in the list is:",max(mylist))
+
+The smallest number in the list is: 29
+The largest number in the list is: 841
+
+
+# To delete the alternative numbers in a list.
+del mylist[1::2]
+print("The new list after deleting the alternative numbers in the list is:", mylist)
+
+The new list after deleting the alternative numbers in the list is: [436, 812, 29, 841]
+
+
+mylist=[126,436,325,812,704,29,130,841]
+print("Original list:", mylist)
+​
+# To delete the odd number in a list and print the even number.
+for i in mylist:
+    if (i%2!=0):
+        mylist.remove(i)
+print("List after removing the odd numbers:", mylist)
+
+Original list: [126, 436, 325, 812, 704, 29, 130, 841]
+List after removing the odd numbers: [126, 436, 812, 704, 130]
+​
